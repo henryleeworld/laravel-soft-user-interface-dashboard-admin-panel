@@ -1,4 +1,4 @@
-# Laravel 8 新擬物風格使用者介面儀表板管理面板
+# Laravel 9 新擬物風格使用者介面儀表板管理面板
 
 新擬物化風格中的光影表現提供了使用者人類最原始的操作意圖：可操作暗示，是一個好的出發點，然而必須針對應用程式性質的不同而有所改良。在設計較走生活風格理念，而操作介面不複雜的應用程式時，非常適合用新擬物化風格來詮釋。
 
@@ -26,8 +26,8 @@ $ php artisan migrate --seed
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/VmZlhvw.png)
+![](https://i.imgur.com/j9QNW6D.png)
 > 使用現有的帳號登入
 
-![](https://i.imgur.com/LREzue6.png)
+![](https://i.imgur.com/kaKb7Tz.png)
 > 判斷一個使用者是否可以執行特定行為
