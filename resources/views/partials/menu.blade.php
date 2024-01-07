@@ -40,7 +40,7 @@
 
         @can('user_management_access')
           <li class="nav-item mt-3">
-            <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">{{ trans('cruds.userManagement.title') }}</h6>
+            <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">{{ trans('cruds.user_management.title') }}</h6>
           </li>
           @can('permission_access')
             <li class="nav-item">

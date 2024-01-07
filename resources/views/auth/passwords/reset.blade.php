@@ -13,8 +13,8 @@
 
                     <input name="token" value="{{ $token }}" type="hidden">
 
-                    <div class="form-group">
-                        <input id="email" type="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required autocomplete="email" autofocus placeholder="{{ trans('global.login_email') }}" value="{{ $email ?? old('email') }}">
+                    <div class="mb-3">
+                        <input id="email" type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="{{ trans('global.login_email') }}" value="{{ $email ?? old('email') }}" required autocomplete="email" autofocus>
 
                         @if($errors->has('email'))
                             <div class="invalid-feedback">
@@ -22,8 +22,8 @@
                             </div>
                         @endif
                     </div>
-                    <div class="form-group">
-                        <input id="password" type="password" name="password" class="form-control" required placeholder="{{ trans('global.login_password') }}">
+                    <div class="mb-3">
+                        <input id="password" type="password" name="password" class="form-control @error('password') is-invalid @enderror" placeholder="{{ trans('global.login_password') }}" required autocomplete="new-password">
 
                         @if($errors->has('password'))
                             <div class="invalid-feedback">
@@ -31,8 +31,8 @@
                             </div>
                         @endif
                     </div>
-                    <div class="form-group">
-                        <input id="password-confirm" type="password" name="password_confirmation" class="form-control" required placeholder="{{ trans('global.login_password_confirmation') }}">
+                    <div class="mb-3">
+                        <input id="password-confirm" type="password" name="password_confirmation" class="form-control" placeholder="{{ trans('global.login_password_confirmation') }}" required autocomplete="new-password">
                     </div>
 
                     <div class="row">

@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'userManagement' => [
+    'user_management' => [
         'title'          => '使用者管理',
         'title_singular' => '使用者管理',
     ],

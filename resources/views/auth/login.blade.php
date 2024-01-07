@@ -22,7 +22,7 @@
                             <i class="fa fa-user"></i>
                         </span>
 
-                        <input id="email" name="email" type="text" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" required autocomplete="email" autofocus placeholder="{{ trans('global.login_email') }}" value="{{ old('email', null) }}">
+                        <input id="email" name="email" type="text" class="form-control @error('email') is-invalid @enderror" placeholder="{{ trans('global.login_email') }}" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                         @if($errors->has('email'))
                             <div class="invalid-feedback">
@@ -34,7 +34,7 @@
                     <div class="input-group mb-3">
                         <span class="input-group-text"><i class="fa fa-lock"></i></span>
 
-                        <input id="password" name="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" required placeholder="{{ trans('global.login_password') }}">
+                        <input id="password" name="password" type="password" class="form-control @error('password') is-invalid @enderror" placeholder="{{ trans('global.login_password') }}" required autocomplete="current-password">
 
                         @if($errors->has('password'))
                             <div class="invalid-feedback">
@@ -45,7 +45,7 @@
 
                     <div class="input-group mb-4">
                         <div class="form-check form-switch">
-                            <input class="form-check-input" name="remember" type="checkbox" id="remember" style="vertical-align: middle;" />
+                            <input class="form-check-input" name="remember" type="checkbox" id="remember" style="vertical-align: middle;" {{ old('remember') ? 'checked' : '' }}/>
                             <label class="form-check-label" for="remember" style="vertical-align: middle;">
                                 {{ trans('global.remember_me') }}
                             </label>
