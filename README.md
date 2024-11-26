@@ -1,4 +1,4 @@
-# Laravel 10 新擬物風格使用者介面儀表板管理面板
+# Laravel 11 新擬物風格使用者介面儀表板管理面板
 
 新擬物化風格中的光影表現提供了使用者人類最原始的操作意圖：可操作暗示，是一個好的出發點，然而必須針對應用程式性質的不同而有所改良。在設計較走生活風格理念，而操作介面不複雜的應用程式時，非常適合用新擬物化風格來詮釋。
 
@@ -20,14 +20,22 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
+```sh
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/login` 來進行登入，預設的電子郵件和密碼分別為 __admin@admin.com__ 和 __password__ 。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/WSIk3wL.png)
+![](https://i.imgur.com/eS8f4kd.png)
 > 使用現有的帳號登入
 
-![](https://i.imgur.com/nsz6NmC.png)
+![](https://i.imgur.com/8Dcel0R.png)
 > 判斷一個使用者是否可以執行特定行為
